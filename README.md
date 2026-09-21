@@ -103,29 +103,6 @@ The Swing window should open with three tabs: **Books**, **Members**, **Issue / 
 - **Nothing happens when double-clicking .java files** → you must compile and run from a terminal or IDE, not by double-clicking source files.
 - **Want to reset all data** → close the app and delete `library.db`; a fresh empty database will be created next run.
 
-## Uploading to GitHub
-
-From inside the `LibraryManagementSystem` folder:
-
-```bash
-git init
-git add .
-git commit -m "Initial commit: Library Management System (Java Swing + SQLite)"
-```
-
-Then, on GitHub:
-1. Go to [github.com/new](https://github.com/new) and create a new repository (e.g. `library-management-system`). Do **not** initialize it with a README (you already have one).
-2. Copy the repository URL it gives you, then run:
-
-```bash
-git remote add origin https://github.com/<your-username>/library-management-system.git
-git branch -M main
-git push -u origin main
-```
-
-3. Refresh the GitHub page — your project, including this README, should now be visible.
-
-> Note: `.gitignore` already excludes `bin/`, `*.class`, and `*.db`, so your compiled files and local database won't be pushed — only source code.
 
 ## Possible Future Enhancements
 
